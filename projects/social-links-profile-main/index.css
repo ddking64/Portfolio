@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+--green:hsl(75, 94%, 57%);
+--white:hsl(0, 0%, 100%);
+--grey700:hsl(0, 0%, 20%);
+--grey800:hsl(0, 0%, 12%);
+--grey900:hsl(0, 0%, 8%);
+--primary-font:14px;
+}
+
+
+body{
+    background: var(--grey900);
+}
+
+
+.container{
+    background: hsl(0, 0%, 12%);
+    width: 350px;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 18px;
+    color: white;
+    text-align: center;
+}
+
+
+.container img{
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+}
+
+/* name */
+.container h1{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+
+.title{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 15px;
+}
+
+
+.description{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 80%);
+}
+
+
+.links a{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 12px;
+    background: hsl(0, 0%, 20%);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.links a:hover{
+    background: hsl(75, 94%, 57%);
+    color: black;
+}
+
+
+@media(min-width:481px) and (max-width:800px){
+.container{
+  width: 60%;
+}
+}
+
+@media(max-width:480px){
+  .container{
+    width:90%;
+    margin:15% auto;
+  }
+}
